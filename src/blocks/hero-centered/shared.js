@@ -1,8 +1,21 @@
+import classnames from 'classnames';
 import { Section, Container, Row, Col, View } from '../../components';
 
-export function HeroSection( { children } ) {
+export function cx( props ) {
+	const { attributes, className } = props;
+	const { isShaded, theme } = attributes;
+	const isDark = theme === 'dark';
+
+	return classnames(
+		isDark && 'is-dark',
+		isShaded && 'is-shaded',
+		className
+	);
+}
+
+export function HeroSection( { className, children } ) {
 	return (
-		<Section>
+		<Section className={ className }>
 			<Container>
 				<Row>
 					<Col className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">

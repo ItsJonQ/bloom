@@ -1,9 +1,15 @@
 .bloom-section {
+	--bloomBackgroundColor: #fff;
+	--bloomTextColor: #000;
+
+	background-color: var( --bloomBackgroundColor );
+	color: var( --bloomTextColor );
 	padding-bottom: 120px;
 	padding-top: 120px;
 	position: relative;
 	max-width: 100%;
 	width: 100%;
+	transition: background 100ms linear;
 
 	&.alignfull {
 		margin-left: 0 !important;
@@ -20,5 +26,34 @@
 .wp-block-bloom-section {
 	.wp-block {
 		max-width: 100% !important;
+	}
+}
+
+.is-shaded {
+	--bloomBackgroundColor: #f2f2f2;
+}
+
+.is-dark {
+	--bloomBackgroundColor: #000;
+	--bloomTextColor: #fff;
+
+	&.is-shaded {
+		--bloomBackgroundColor: #111;
+	}
+
+	.btn-outline-dark {
+		border-color: white;
+		color: white;
+
+		&:hover,
+		&:not( :disabled ):not( .disabled ):active {
+			background-color: white;
+			border-color: white;
+			color: black;
+		}
+
+		&:not( :disabled ):not( .disabled ):active:focus {
+			box-shadow: 0 0 0 0.2rem rgba( 255, 255, 255, 0.2 );
+		}
 	}
 }

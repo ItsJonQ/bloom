@@ -1,15 +1,14 @@
 import { __ } from '@wordpress/i18n';
 import { RichText } from '@wordpress/block-editor';
-import { HeroSection, ActionWrapper } from './shared';
+import { HeroSection, ActionWrapper, cx } from './shared';
+import Inspector from './inspector';
 
-export default function Edit( {
-	attributes,
-	className,
-	setAttributes,
-	...props
-} ) {
+export default function Edit( props ) {
+	const { attributes, setAttributes } = props;
+	const classes = cx( props );
+
 	return (
-		<HeroSection className={ className } { ...props }>
+		<HeroSection { ...props } className={ classes }>
 			<RichText
 				tagName="h1"
 				className="display-3 font-weight-bold text-center mt-0 mb-2"
@@ -48,6 +47,7 @@ export default function Edit( {
 					placeholder={ __( 'Get Started' ) }
 				/>
 			</ActionWrapper>
+			<Inspector { ...props } />
 		</HeroSection>
 	);
 }
