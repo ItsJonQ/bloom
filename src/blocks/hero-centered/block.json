@@ -2,10 +2,6 @@
 	"name": "bloom/hero-centered",
 	"category": "common",
 	"attributes": {
-		"align": {
-			"type": "string",
-			"default": "full"
-		},
 		"title": {
 			"type": "string",
 			"default": "Craft something brilliant"

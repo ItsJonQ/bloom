@@ -10,12 +10,12 @@ export default function Save( { attributes, className } ) {
 	} = attributes;
 
 	return (
-		<HeroSection className={ className }>
-			<h1 className="display-3 font-weight-bold text-center mt-0 mb-4">
+		<HeroSection>
+			<h1 className="display-3 font-weight-bold text-center mt-0 mb-2">
 				{ attributes.title }
 			</h1>
 
-			<p className="text-center lead font-weight-normal">
+			<p className="text-center lead font-weight-normal mb-0">
 				{ description }
 			</p>
 			<ActionWrapper>

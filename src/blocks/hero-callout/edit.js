@@ -2,18 +2,13 @@ import { __ } from '@wordpress/i18n';
 import { InnerBlocks, RichText } from '@wordpress/block-editor';
 import { Section, Content } from '../../components';
 
-export default function Edit( {
-	attributes,
-	className,
-	setAttributes,
-	...props
-} ) {
+export default function Edit( { attributes, setAttributes } ) {
 	return (
-		<Section className={ className } { ...props }>
+		<Section>
 			<Content>
 				<RichText
 					tagName="h1"
-					className="display-2 font-weight-bold mt-0 mb-4"
+					className="display-2 font-weight-bold mt-0 mb-2"
 					value={ attributes.title }
 					formattingControls={ [] }
 					onChange={ ( title ) => setAttributes( { title } ) }
@@ -21,7 +16,7 @@ export default function Edit( {
 				/>
 				<RichText
 					tagName="p"
-					className="lead-lg font-weight-normal mb-5"
+					className="lead-lg font-weight-normal mb-4"
 					value={ attributes.description }
 					formattingControls={ [ 'bold', 'italic' ] }
 					onChange={ ( description ) =>

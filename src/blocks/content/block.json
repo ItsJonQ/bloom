@@ -2,9 +2,9 @@
 	"name": "bloom/content",
 	"category": "common",
 	"attributes": {
-		"align": {
+		"backgroundColor": {
 			"type": "string",
-			"default": "full"
+			"default": ""
 		}
 	}
 }

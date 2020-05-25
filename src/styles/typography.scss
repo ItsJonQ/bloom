@@ -4,8 +4,16 @@ $bloom-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
 	Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
 
 .bloom {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: black;
 	font-family: $bloom-font-family;
 	font-size: 17px;
+
+	* {
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
 
 	h1:not( [class^='display-'] ) {
 		font-size: 3em;
@@ -55,13 +63,28 @@ $bloom-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
 		font-size: 1.25em;
 	}
 
+	.display-1,
+	.display-2,
+	.display-3,
+	.display-4,
+	h1,
+	h2,
+	h3 {
+		letter-spacing: -0.015em;
+	}
+
 	h1,
 	h2,
 	h3,
 	h4,
 	h5,
 	h6 {
+		border: none;
 		font-weight: bold;
+
+		&::before {
+			display: none;
+		}
 
 		&:first-child {
 			margin-top: 0 !important;
@@ -75,6 +98,7 @@ $bloom-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
 	h5,
 	h6,
 	p {
+		color: inherit;
 		font-family: $bloom-font-family;
 	}
 

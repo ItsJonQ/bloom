@@ -12,7 +12,7 @@ export default function Edit( {
 		<HeroSection className={ className } { ...props }>
 			<RichText
 				tagName="h1"
-				className="display-3 font-weight-bold text-center mt-0 mb-4"
+				className="display-3 font-weight-bold text-center mt-0 mb-2"
 				value={ attributes.title }
 				formattingControls={ [] }
 				onChange={ ( title ) => setAttributes( { title } ) }
@@ -20,7 +20,7 @@ export default function Edit( {
 			/>
 			<RichText
 				tagName="p"
-				className="text-center lead font-weight-normal"
+				className="text-center lead font-weight-normal mb-0"
 				value={ attributes.description }
 				formattingControls={ [ 'bold', 'italic' ] }
 				onChange={ ( description ) => setAttributes( { description } ) }

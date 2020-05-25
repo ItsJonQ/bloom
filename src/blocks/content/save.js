@@ -3,9 +3,13 @@ import { InnerBlocks } from '@wordpress/block-editor';
 import { Content } from '../../components';
 
 export default function Save( { attributes, className, ...props } ) {
+	const style = { backgroundColor: attributes.backgroundColor };
+
 	return (
-		<Content className={ className } { ...props }>
-			<InnerBlocks.Content />
-		</Content>
+		<div style={ style }>
+			<Content className={ className }>
+				<InnerBlocks.Content />
+			</Content>
+		</div>
 	);
 }

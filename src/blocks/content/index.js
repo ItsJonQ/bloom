@@ -21,7 +21,6 @@ const settings = {
 		__( 'faq', 'bloom' ),
 	],
 	supports: {
-		align: [ 'full' ],
 		html: false,
 	},
 	attributes,

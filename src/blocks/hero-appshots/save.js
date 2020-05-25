@@ -6,7 +6,7 @@ export default function Save( { attributes, className } ) {
 
 	return (
 		<HeroSection className={ className }>
-			<h1 className="display-3 font-weight-bold mt-0 mb-4">{ title }</h1>
+			<h1 className="display-3 font-weight-bold mt-0 mb-2">{ title }</h1>
 
 			<p className="lead font-weight-normal">{ description }</p>
 			<ActionWrapper>

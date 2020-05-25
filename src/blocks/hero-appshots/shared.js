@@ -14,6 +14,6 @@ export function HeroSection( { children } ) {
 
 export function ActionWrapper( { children } ) {
 	return (
-		<View className="d-flex justify-content-start pt-4">{ children }</View>
+		<View className="d-flex justify-content-start pt-2">{ children }</View>
 	);
 }

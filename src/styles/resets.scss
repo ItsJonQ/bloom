@@ -2,3 +2,31 @@
 	max-width: 100% !important;
 	width: 100% !important;
 }
+
+.btn {
+	text-decoration: none !important;
+
+	&:hover {
+		text-decoration: none !important;
+	}
+	&:visited {
+		color: currentColor;
+	}
+}
+
+.btn-primary {
+	&:hover,
+	&:visited {
+		color: white;
+	}
+}
+
+.btn-outline-dark {
+	&:hover {
+		color: white;
+	}
+}
+
+div[data-type*='bloom/'] {
+	width: 100%;
+}

@@ -6,7 +6,10 @@
 	width: 100%;
 
 	&.alignfull {
-		margin: 0;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		left: 0 !important;
+		right: 0 !important;
 	}
 
 	.wp-block {

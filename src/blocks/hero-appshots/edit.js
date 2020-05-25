@@ -26,7 +26,7 @@ export default function Edit( {
 					<Col className="col-md-6">
 						<RichText
 							tagName="h1"
-							className="display-3 font-weight-bold mt-0 mb-4"
+							className="display-3 font-weight-bold mt-0 mb-2"
 							value={ attributes.title }
 							formattingControls={ [] }
 							onChange={ ( title ) => setAttributes( { title } ) }
