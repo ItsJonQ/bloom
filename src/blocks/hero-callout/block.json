@@ -1,5 +1,5 @@
 {
-	"name": "bloom/hero-appshots",
+	"name": "bloom/hero-callout",
 	"category": "common",
 	"attributes": {
 		"align": {
@@ -13,14 +13,6 @@
 		"description": {
 			"type": "string",
 			"default": "Creativity doesn't wait for that perfect moment. It fashions its own perfect moments out of ordinary ones."
-		},
-		"primaryActionLabel": {
-			"type": "string",
-			"default": "Get Started"
-		},
-		"secondaryActionLabel": {
-			"type": "string",
-			"default": "Learn More"
 		}
 	}
 }

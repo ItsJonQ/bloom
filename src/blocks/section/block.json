@@ -1,0 +1,10 @@
+{
+	"name": "bloom/section",
+	"category": "common",
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		}
+	}
+}

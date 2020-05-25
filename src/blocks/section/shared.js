@@ -3,11 +3,9 @@ import { Section, Container, Row, Col, View } from '../../components';
 export function HeroSection( { children } ) {
 	return (
 		<Section>
-			<Container>
-				<Row>
-					<Col className="col-md-6">{ children }</Col>
-				</Row>
-			</Container>
+			<Row>
+				<Col className="col-md-6">{ children }</Col>
+			</Row>
 		</Section>
 	);
 }

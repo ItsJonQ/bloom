@@ -1,0 +1,23 @@
+.bloom-content {
+	&__body {
+		> p {
+			&:first-child {
+				font-size: 1.25em;
+			}
+		}
+	}
+}
+
+.wp-block-bloom-content {
+	.block-editor-block-list__layout > {
+		div[data-type='core/paragraph'] {
+			&:first-child p {
+				font-size: 1.25em;
+			}
+		}
+	}
+
+	.wp-block {
+		max-width: 100% !important;
+	}
+}

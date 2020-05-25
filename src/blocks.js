@@ -1,8 +1,11 @@
 import { registerBlockType } from '@wordpress/blocks';
 
 // Register Blocks
+import * as content from './blocks/content';
 import * as heroAppShots from './blocks/hero-appshots';
+import * as heroCallout from './blocks/hero-callout';
 import * as heroCentered from './blocks/hero-centered';
+import * as section from './blocks/section';
 
 const registerBlock = ( block ) => {
 	if ( ! block ) {
@@ -17,7 +20,9 @@ const registerBlock = ( block ) => {
 };
 
 export const registerBloomBlocks = () => {
-	[ heroAppShots, heroCentered ].forEach( registerBlock );
+	[ content, heroAppShots, heroCallout, heroCentered, section ].forEach(
+		registerBlock
+	);
 };
 
 registerBloomBlocks();

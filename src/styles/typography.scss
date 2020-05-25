@@ -1,10 +1,72 @@
 @import url( 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap' );
 
-$blm-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-	Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+$bloom-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+	Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
 
-.blmco {
-	font-family: $blm-font-family;
+.bloom {
+	font-family: $bloom-font-family;
+	font-size: 17px;
+
+	h1:not( [class^='display-'] ) {
+		font-size: 3em;
+	}
+
+	h2:not( [class^='display-'] ) {
+		font-size: 2.5em;
+	}
+
+	h3:not( [class^='display-'] ) {
+		font-size: 2em;
+	}
+
+	h4:not( [class^='display-'] ) {
+		font-size: 1.5em;
+	}
+
+	h5:not( [class^='display-'] ) {
+		font-size: 1.25em;
+	}
+
+	h6:not( [class^='display-'] ) {
+		font-size: 1em;
+	}
+
+	.display-1 {
+		font-size: 5em !important;
+	}
+
+	.display-2 {
+		font-size: 4em !important;
+	}
+
+	.display-3 {
+		font-size: 3.5em !important;
+	}
+
+	.display-4 {
+		font-size: 3em !important;
+	}
+
+	.lead-lg {
+		font-size: 1.5em;
+	}
+
+	.lead {
+		font-size: 1.25em;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: bold;
+
+		&:first-child {
+			margin-top: 0 !important;
+		}
+	}
 
 	h1,
 	h2,
@@ -13,6 +75,21 @@ $blm-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto
 	h5,
 	h6,
 	p {
-		font-family: $blm-font-family;
+		font-family: $bloom-font-family;
+	}
+
+	p {
+		font-size: 1em;
+		line-height: 1.5;
+		margin-bottom: 1.5em;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.btn,
+	.btn-lg {
+		font-size: 1em;
 	}
 }

@@ -1,7 +1,21 @@
-.blmco-section {
-	background: white;
+.bloom-section {
 	padding-bottom: 120px;
 	padding-top: 120px;
+	position: relative;
 	max-width: 100%;
 	width: 100%;
+
+	&.alignfull {
+		margin: 0;
+	}
+
+	.wp-block {
+		max-width: 100% !important;
+	}
+}
+
+.wp-block-bloom-section {
+	.wp-block {
+		max-width: 100% !important;
+	}
 }
