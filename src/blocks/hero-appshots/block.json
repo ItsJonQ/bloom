@@ -1,0 +1,26 @@
+{
+	"name": "bloom/smiley",
+	"category": "common",
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		},
+		"title": {
+			"type": "string",
+			"default": "Lorem ipsum dolor sit amet"
+		},
+		"description": {
+			"type": "string",
+			"default": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+		},
+		"primaryActionLabel": {
+			"type": "string",
+			"default": "Get Started"
+		},
+		"secondaryActionLabel": {
+			"type": "string",
+			"default": "Learn More"
+		}
+	}
+}
