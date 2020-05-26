@@ -1,0 +1,22 @@
+{
+	"name": "bloom/hero",
+	"category": "layout",
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		},
+		"contentAlign": {
+			"type": "string",
+			"default": "center"
+		},
+		"theme": {
+			"type": "string",
+			"default": "light"
+		},
+		"isShaded": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

@@ -1,0 +1,123 @@
+/* Settings */
+:root {
+	--ax-delay: 0;
+	--ax-staggerDelay: 200;
+	--ax-duration: 300;
+	--ax-timingFunction: ease;
+	--ax-bounce: cubic-bezier( 0.68, -0.65, 0.265, 1.65 );
+	--ax-elastic: cubic-bezier( 0.68, -1.5, 0.265, 2.5 );
+}
+/* Settings */
+
+/* Components */
+.ax-El,
+.ax-List > * {
+	transition-property: all;
+	transition-delay: calc( var( --ax-delay ) * 1ms );
+	transition-duration: calc( var( --ax-duration ) * 1ms );
+	transition-timing-function: var( --ax-timingFunction );
+	will-change: opacity, transform;
+}
+
+/* Staggering */
+.ax-List.stagger > * {
+	transition-delay: calc(
+		( var( --nIndex ) * var( --ax-staggerDelay ) + var( --ax-delay ) ) * 1ms
+	);
+}
+
+* > *:nth-child( 1 ) {
+	--nIndex: 0;
+}
+* > *:nth-child( 2 ) {
+	--nIndex: 1;
+}
+* > *:nth-child( 3 ) {
+	--nIndex: 2;
+}
+* > *:nth-child( 4 ) {
+	--nIndex: 3;
+}
+* > *:nth-child( 5 ) {
+	--nIndex: 4;
+}
+* > *:nth-child( 6 ) {
+	--nIndex: 5;
+}
+* > *:nth-child( 7 ) {
+	--nIndex: 6;
+}
+* > *:nth-child( 8 ) {
+	--nIndex: 7;
+}
+/* Add more as needed! */
+* > *:nth-child( n + 9 ) {
+	--nIndex: 8;
+}
+/* Stops staggering delays when de-activated */
+*:not( .active ) > * {
+	--nIndex: 0;
+}
+/* Components */
+
+/* Sequences */
+.ax-El.ax-fade,
+.ax-List.ax-fade > * {
+	opacity: 0;
+}
+.ax-El.ax-fade.active,
+.ax-List.ax-fade.active > * {
+	opacity: 1;
+}
+
+.ax-El.ax-up,
+.ax-List.ax-up > * {
+	transform: translateY( 20% );
+}
+.ax-El.ax-up.active,
+.ax-List.ax-up.active > * {
+	transform: translateY( 0 );
+}
+
+.ax-El.ax-fadeUp,
+.ax-List.ax-fadeUp > * {
+	opacity: 0;
+	transform: translateY( 20% );
+}
+.ax-El.ax-fadeUp.active,
+.ax-List.ax-fadeUp.active > * {
+	opacity: 1;
+	transform: translateY( 0 );
+}
+
+.ax-El.ax-fadeLeft,
+.ax-List.ax-fadeLeft > * {
+	opacity: 0;
+	transform: translateX( 20% );
+}
+.ax-El.ax-fadeLeft.active,
+.ax-List.ax-fadeLeft.active > * {
+	opacity: 1;
+	transform: translateX( 0 );
+}
+
+.ax-El.ax-fadeRight,
+.ax-List.ax-fadeRight > * {
+	opacity: 0;
+	transform: translateX( -20% );
+}
+.ax-El.ax-fadeRight.active,
+.ax-List.ax-fadeRight.active > * {
+	opacity: 1;
+	transform: translateX( 0 );
+}
+
+/* Timing Functions */
+.ax-tf-bounce {
+	transition-timing-function: var( --ax-bounce );
+}
+
+.ax-tf-elastic {
+	transition-timing-function: var( --ax-elastic );
+}
+/* Sequences */

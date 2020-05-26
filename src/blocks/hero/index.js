@@ -7,20 +7,13 @@ import { __ } from '@wordpress/i18n';
 const { name, category, attributes } = metadata;
 
 const settings = {
-	/* translators: block name */
-	title: __( 'Hero: Callout', 'bloom' ),
-	/* translators: block description */
+	title: __( 'Hero', 'bloom' ),
 	description: __( 'Does a thing.', 'bloom' ),
 	category,
 	icon: 'smiley',
-	keywords: [
-		'bloom',
-		/* translators: block keyword */
-		__( 'tabs', 'bloom' ),
-		/* translators: block keyword (abbreviation for "frequently asked questions") */
-		__( 'faq', 'bloom' ),
-	],
+	keywords: [ 'bloom', __( 'tabs', 'bloom' ), __( 'faq', 'bloom' ) ],
 	supports: {
+		align: true,
 		html: false,
 	},
 	attributes,

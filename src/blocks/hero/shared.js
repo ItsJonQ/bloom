@@ -7,6 +7,7 @@ export function cx( props ) {
 	const isDark = theme === 'dark';
 
 	return classnames(
+		'bloom-hero',
 		isDark && 'is-dark',
 		isShaded && 'is-shaded',
 		className
